@@ -2,7 +2,7 @@ PART A — WRITTEN QUESTIONS
 
 1. When someone opens my portfolio link, the browser sends an HTTP request to the web server. The server finds the requested HTML, CSS and image files and sends them back. The browser reads the HTML, downloads the linked CSS/images and displays the page. If the site later needs dynamic data, application logic runs on the server and talks to a database; the database stores that data. For this static assignment, the browser displays files served by the web server and no database is needed.
 
-   See client-server-diagram.png for the diagram.
+ See client-server-diagram.png for the diagram.
 
 2. I would use POST because a contact message is data being submitted to the server. GET is intended mainly for requesting data and can put form values in the URL. If method is omitted, a form uses GET by default. A successful request commonly returns a 2xx status such as 200 OK or 201 Created. A server-side failure is in the 5xx status-code family.
 
