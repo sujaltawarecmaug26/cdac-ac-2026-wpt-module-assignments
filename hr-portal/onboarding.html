@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Joiner Onboarding | TechNova HR</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-row">
+        <a class="brand" href="login.html">TechNova HR</a>
+        <nav aria-label="HR portal navigation">
+          <a href="login.html">Login</a><a href="directory.html">Directory</a
+          ><a href="onboarding.html">Onboarding</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="page-heading">
+        <h1>New joiner onboarding</h1>
+        <p>Complete the details below to prepare your employee record.</p>
+      </div>
+      <section class="panel">
+        <form
+          action="https://example.com/hr/onboarding"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <div>
+            <label for="full-name">Full name</label
+            ><input
+              type="text"
+              id="full-name"
+              name="full-name"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+          <div>
+            <label for="official-email">Official email</label
+            ><input
+              type="email"
+              id="official-email"
+              name="official-email"
+              placeholder="name@technova.example"
+              required
+            />
+          </div>
+          <div>
+            <label for="temporary-password">Temporary password</label
+            ><input
+              type="password"
+              id="temporary-password"
+              name="temporary-password"
+              placeholder="Create a temporary password"
+              required
+            />
+          </div>
+          <div>
+            <label for="date-of-birth">Date of birth</label
+            ><input
+              type="date"
+              id="date-of-birth"
+              name="date-of-birth"
+              required
+            />
+          </div>
+          <div>
+            <label for="joining-date">Joining date</label
+            ><input
+              type="date"
+              id="joining-date"
+              name="joining-date"
+              required
+            />
+          </div>
+          <div>
+            <label for="orientation-slot">Orientation slot</label
+            ><input
+              type="datetime-local"
+              id="orientation-slot"
+              name="orientation-slot"
+              required
+            />
+          </div>
+          <div>
+            <label for="reporting-time">Reporting time on day one</label
+            ><input
+              type="time"
+              id="reporting-time"
+              name="reporting-time"
+              required
+            />
+          </div>
+          <div>
+            <label>Gender</label>
+            <div class="radio-options">
+              <label
+                ><input
+                  type="radio"
+                  id="gender-woman"
+                  name="gender"
+                  value="woman"
+                  required
+                />
+                Woman</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  id="gender-man"
+                  name="gender"
+                  value="man"
+                />
+                Man</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  id="gender-other"
+                  name="gender"
+                  value="other"
+                />
+                Prefer not to say / other</label
+              >
+            </div>
+          </div>
+          <div>
+            <label for="qualification">Highest qualification</label
+            ><select id="qualification" name="qualification" required>
+              <option value="">Select qualification</option>
+              <option value="diploma">Diploma</option>
+              <option value="bachelors">Bachelor's degree</option>
+              <option value="masters">Master's degree</option>
+              <option value="doctorate">Doctorate</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="department">Department</label
+            ><select id="department" name="department" required>
+              <option value="">Select department</option>
+              <option value="engineering">Engineering</option>
+              <option value="hr">Human Resources</option>
+              <option value="design">Design</option>
+              <option value="finance">Finance</option>
+              <option value="customer-success">Customer Success</option>
+            </select>
+          </div>
+          <div class="field-full">
+            <label for="current-address">Current address</label
+            ><textarea
+              id="current-address"
+              name="current-address"
+              rows="3"
+              placeholder="Street, city, state and PIN code"
+              required
+            ></textarea>
+          </div>
+          <div class="field-full">
+            <label for="joiner-file">Passport photo or resume</label
+            ><input
+              type="file"
+              id="joiner-file"
+              name="joiner-file"
+              accept=".jpg,.jpeg,.png,.pdf,.doc,.docx"
+              required
+            />
+          </div>
+          <div class="field-full">
+            <label class="declaration"
+              ><input
+                type="checkbox"
+                id="declaration"
+                name="declaration"
+                required
+              />
+              I confirm that the information provided is correct.</label
+            >
+          </div>
+          <div>
+            <button type="submit">Submit details</button>
+            <button class="reset-button" type="reset">Reset</button>
+          </div>
+          <div>
+           <button
+              type="button"
+              class="reset-button"
+              onclick="alert('Help feature coming soon!')"
+            >
+              Need help?
+            </button>
+          </div>
+        </form>
+      </section>
+      <section style="margin-top: 30px">
+        <h2>TechNova office</h2>
+        <p>Demo map location for the fictional company office in Pune.</p>
+        <iframe
+          class="office-map"
+          title="Map of Pune for TechNova office"
+          loding="lazy"
+          src="https://maps.google.com/maps?q=Pune%2C%20Maharashtra&t=&z=11&ie=UTF8&iwloc=&output=embed"
+        ></iframe>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>TechNova HR | Login</title><link rel="stylesheet" href="style.css"></head>
+<body class="login-page">
+
+<header class="site-header">
+  <div class="nav-row">
+    <a class="brand" href="login.html">TechNova HR</a>
+    <nav aria-label="HR portal navigation">
+      <a href="login.html">Login</a><a href="directory.html">Directory</a><a href="onboarding.html">Onboarding</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="login-card">
+    <h1>Welcome back</h1>
+    <p>Sign in to your employee workspace.</p>
+    <!-- Demo only: this form has no authentication backend yet. -->
+    <form action="#" method="post" style="display:block;">
+      <label for="username" style="text-align:left;">Username</label>
+      <input class="login-input" type="text" id="username" name="username" placeholder="Enter your username" autocomplete="username" required>
+      <label for="password" style="text-align:left;">Password</label>
+      <input class="login-input" type="password" id="password" name="password" placeholder="Enter your password" autocomplete="current-password" required>
+      <button id="login-button" type="submit">Login</button>
+    </form>
+    <p class="signup-line">Need an account? <a href="onboarding.html">Sign Up</a></p>
+  </section>
+</main>
+</body>
+</html>
