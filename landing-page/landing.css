@@ -1,0 +1,38 @@
+/* Selector precedence: ID > class > element > universal for ordinary declarations; ties usually follow source order. */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root { --coffee: #3b241b; --cream: #fff4e5; --caramel: #c17a42; --mint: #d6e8d0; }
+body { background: #fffaf3; color: rgb(59, 36, 27); font-family: Georgia, "Times New Roman", serif; line-height: 1.65; }
+h1, h2, h3 { line-height: 1.2; }
+h1 { font-size: clamp(2.3rem, 5vw, 4rem); }
+h2 { font-size: 1.8rem; margin-bottom: 14px; }
+p { margin: 12px 0; }
+a { color: #3b5998; font-weight: 700; }
+a:hover { color: #7c2d12; }
+#banner { min-height: 330px; background: linear-gradient(120deg, rgba(35,20,15,.2), rgba(35,20,15,.8)), url("images/brew-banner.svg") center/cover no-repeat; color: white; display: flex; align-items: center; padding: 48px max(24px, calc((100% - 1100px)/2)); }
+#banner .banner-copy { max-width: 680px; }
+#banner p { color: #fff0df; font-size: 1.1rem; }
+main { max-width: 1100px; width: calc(100% - 40px); margin: 0 auto; }
+.section { padding: 48px 0; }
+.kicker { color: #8b4b28; font-size: .82rem; font-weight: 800; text-transform: uppercase; letter-spacing: .14em; }
+.highlight { color: #a34d20; font-weight: 800; }
+.info-row { display: flex; gap: 32px; align-items: flex-start; }
+.info-panel { flex: 1; background: white; border-radius: 16px; padding: 22px; border: 1px solid #ead9c7; }
+.info-panel ul, .info-panel ol { padding-left: 22px; }
+.offer-row { display: flex; justify-content: center; align-items: stretch; gap: 22px; margin-top: 22px; }
+.offer-card {
+  width: 31%; height: 270px; background-color: #fff0dc; color: #43281d;
+  border-width: 2px; border-style: solid; border-color: #c89a72;
+  border-radius: 18px; padding: 24px; margin: 8px 0;
+  /* Padding is inside the border; margin is outside it. border-box includes padding and border in the declared width/height. */
+  transition: background-color .25s ease, transform .25s ease, box-shadow .25s ease;
+}
+.offer-card { flex: 1; }
+.offer-card.featured { flex: 1.25; background-color: #e2eddc; border-color: #7d9d72; }
+.offer-card:hover { background-color: #f6d6b6; transform: translateY(-5px); box-shadow: 0 14px 28px rgba(67,40,29,.12); }
+.offer-card .price { font-size: 1.6rem; font-weight: 800; color: #7c3f20; margin-top: 18px; }
+.pill { display: inline-block; border-radius: 30px; padding: 4px 10px; background: #d6e8d0; color: #2f5130; font-family: Arial, sans-serif; font-size: .78rem; font-weight: 700; }
+.text-link { text-decoration: underline; }
+#order-button { position: fixed; right: 22px; bottom: 22px; z-index: 5; background: linear-gradient(135deg, #7c3f20, #c17a42); color: white; padding: 14px 20px; border-radius: 30px; box-shadow: 0 10px 25px rgba(60,30,15,.25); text-decoration: none; font-family: Arial, sans-serif; transition: filter .2s ease, transform .2s ease; }
+#order-button:hover { filter: brightness(1.15); transform: translateY(-3px); }
+footer { padding: 26px 20px; text-align: center; background: #2d1b16; color: #f8e7d4; }
+@media(max-width:760px) { .info-row, .offer-row { flex-direction: column; } .offer-card { width: 100%; height: auto; min-height: 220px; } }

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="520" viewBox="0 0 1400 520">
+  <defs><linearGradient id="coffee" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2d1b16"/><stop offset="1" stop-color="#8b5e3c"/></linearGradient></defs>
+  <rect width="1400" height="520" fill="url(#coffee)"/>
+  <circle cx="1080" cy="250" r="185" fill="#d6b28a" opacity=".22"/>
+  <circle cx="1080" cy="250" r="135" fill="#f2dfc8"/>
+  <circle cx="1080" cy="250" r="100" fill="#7b4b2a"/>
+  <path d="M1015 250 Q1080 175 1145 250 Q1080 325 1015 250Z" fill="none" stroke="#f2dfc8" stroke-width="12"/>
+  <path d="M1080 175 Q1010 250 1080 325 Q1150 250 1080 175Z" fill="none" stroke="#f2dfc8" stroke-width="12"/>
+  <text x="90" y="190" font-family="Georgia, serif" font-size="70" font-weight="bold" fill="#fff3e6">Little Ember</text>
+  <text x="95" y="255" font-family="Arial, sans-serif" font-size="30" fill="#f5dfc6">Small-batch coffee. Slow mornings.</text>
+  <text x="95" y="330" font-family="Arial, sans-serif" font-size="22" fill="#e7c9a8">POUR • PAUSE • REPEAT</text>
+</svg>
